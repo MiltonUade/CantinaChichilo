@@ -1,0 +1,272 @@
+/* General body styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(155deg, #849bbe 0%, #d5d8c5 85%, #f0681a 100%);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Table cell styling */
+td {
+    border: 3px solid white;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+.sobre-nosotros-section {
+    width: 100%; /* Ajusta el ancho del contenedor */
+    height: auto; /* Deja que la altura se ajuste al contenido */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+    padding: 0; /* Elimina cualquier relleno */
+}
+
+.sobre-nosotros-section img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    max-width: 100%; /* Limita el ancho máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+}
+
+
+.reservas-section {
+    width: 100%; /* Ajusta el ancho del contenedor */
+    height: auto; /* Deja que la altura se ajuste al contenido */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+    padding: 0; /* Elimina cualquier relleno */
+}
+
+.reservas-section img {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    max-width: 100%; /* Limita el ancho máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+}
+
+
+/* Logo container styling */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 1px 0;
+}
+
+/* Header image styling */
+.header-image {
+    width: 200px;
+    max-width: 70%;
+    height: auto;
+    border-radius: 90px;
+}
+
+/* Hashtag styling */
+.hashtag {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    background: linear-gradient(45deg, #432eff, #f8db39);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Menú transparente fijo arriba */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(3, 3, 3, 0.15); /* Transparente con leve fondo blanco */
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+/* Contenedor del menú */
+.navbar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lista de ítems del menú */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Enlaces del menú */
+.menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #f8db39;
+}
+
+/* Sección con video de fondo */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Estilo del video */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-logo {
+    max-width: 300px;
+    width: 80%;
+    border-radius: 70px;
+}
+
+/* Asegurarse que el navbar esté por encima si se necesita */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.4); /* Opcional, fondo semitransparente */
+}
+
+.footer-contactos {
+    background-color: rgba(255, 255, 255, 0.1); /* transparente suave */
+    padding: 20px 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .contactos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .contacto-item {
+    font-size: 16px;
+  }
+  
+  .contacto-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contacto-item a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+/* Responsive para el menú */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .title {
+        font-size: 20px;
+        line-height: 0.5em;
+    }
+
+    .header-image {
+        width: 200px;
+        border-radius: 30px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        line-height: 1em;
+        margin-top: -0.4em;
+    }
+
+    .subtitle2 {
+        font-size: 13px;
+        line-height: 1em;
+        margin-top: -0.4em;
+    }
+
+    .hashtag {
+        font-size: 17px;
+        bottom: 0.5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 10px;
+        line-height: 2em;
+    }
+
+    .header-image {
+        width: 150px;
+        border-radius: 30px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+    }
+
+    .subtitle2 {
+        font-size: 15px;
+        margin-top: -1.5em;
+    }
+
+    .hashtag {
+        font-size: 10px;
+        bottom: 0.5px;
+    }
+}
